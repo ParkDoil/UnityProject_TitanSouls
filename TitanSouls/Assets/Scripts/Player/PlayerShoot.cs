@@ -6,13 +6,15 @@ public class PlayerShoot : MonoBehaviour
 {
     public GameObject Arrow;
 
-    public Transform _fireLoaction;
-    
+    private float _elapsedTime;
+
     public bool IsFire { get; private set; }
     void Update()
     {
+        _elapsedTime += Time.deltaTime;
         if (Input.GetMouseButtonDown(0))
         {
+            
             if (IsFire == false)
             {
                 IsFire = true;
@@ -23,13 +25,14 @@ public class PlayerShoot : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Arrow")
+        if(collision.tag == "Arrow"&&_elapsedTime >= 0.5f)
         {
             IsFire = false;
+            _elapsedTime = 0;
         }
     }
     void Fire()
     {
-        Instantiate(Arrow, _fireLoaction.position, _fireLoaction.rotation);
+        Instantiate(Arrow, transform.position, transform.rotation);
     }
 }

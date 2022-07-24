@@ -20,6 +20,9 @@ public class Arrow : MonoBehaviour
 
     void Update()
     {
+        Vector2 vec = new Vector2(90f, 0f);
+        transform.Rotate(vec);
+
         if (Input.GetKeyDown(KeyCode.R))
         {
             if (IsReturn == false)
@@ -29,8 +32,7 @@ public class Arrow : MonoBehaviour
         }
         if (IsReturn == false)
         {
-            Vector2 _moveVec = new Vector2(MoveSpeed * Time.deltaTime, 0f);
-            transform.Translate(_moveVec);
+            transform.Translate(Vector2.up * MoveSpeed);
         }
         else
         {
@@ -40,10 +42,15 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if (collision.tag == "Player" && IsReturn == true)
         {
             IsReturn = false;
             Destroy(gameObject);
+        }
+
+        if(collision.tag == "wall")
+        {
+            IsReturn = true;
         }
     }
 }
