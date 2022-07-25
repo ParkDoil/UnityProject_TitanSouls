@@ -30,13 +30,13 @@ public class Arrow : MonoBehaviour
         Vector2 vec = new Vector2(90f, 0f);
         transform.Rotate(vec);
 
-        if (Input.GetMouseButton(1))
+        if (Input.GetKey(KeyCode.V))
         {
             IsReturn = true;
             IsCollision = false;
         }
 
-        if (Input.GetMouseButtonUp(1))
+        if (Input.GetKeyUp(KeyCode.V))
         {
             IsReturn = false;
         }
