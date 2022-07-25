@@ -6,33 +6,49 @@ using UnityEngine.AI;
 public class Arrow : MonoBehaviour
 {
     NavMeshAgent _navMeshAgent;
+    Rigidbody2D _rigid;
 
     private Transform _target;
+    private Transform _collisionPosition;
 
-    public float MoveSpeed = 1f;
+    public float MoveSpeed;
     public bool IsReturn { get; private set; }
+    public bool IsCollision { get; private set; }
 
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _target = GameObject.FindGameObjectWithTag("Player").transform;
+        _rigid = GetComponent<Rigidbody2D>();
+        _collisionPosition = GetComponent<Transform>();
     }
 
     void Update()
     {
+        IsReturn = false;
+
         Vector2 vec = new Vector2(90f, 0f);
         transform.Rotate(vec);
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKey(KeyCode.R))
         {
-            if (IsReturn == false)
-            {
-                IsReturn = true;
-            }
+            IsReturn = true;
+            IsCollision = false;
         }
-        if (IsReturn == false)
+
+        if (Input.GetKeyUp(KeyCode.R))
         {
+            IsReturn = false;
+        }
+
+        if (IsReturn == false && IsCollision == false)
+        {
+            _navMeshAgent.ResetPath();
             transform.Translate(Vector2.up * MoveSpeed);
+        }
+        else if(IsReturn == false && IsCollision == true)
+        {
+            transform.position = _collisionPosition.position;
         }
         else
         {
@@ -48,9 +64,10 @@ public class Arrow : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if(collision.tag == "wall")
+        if (collision.tag == "Wall")
         {
-            IsReturn = true;
+            _collisionPosition.position = transform.position;
+            IsCollision = true;
         }
     }
 }

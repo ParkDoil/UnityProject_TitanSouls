@@ -1,38 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerShoot : MonoBehaviour
 {
     public GameObject Arrow;
+    public Transform _firePosition;
 
-    private float _elapsedTime;
 
     public bool IsFire { get; private set; }
+
     void Update()
     {
-        _elapsedTime += Time.deltaTime;
-        if (Input.GetMouseButtonDown(0))
+        if (SceneManager.sceneCountInBuildSettings == 1)
         {
-            
-            if (IsFire == false)
+            return;
+        }
+        else
+        {
+            if (Input.GetMouseButtonDown(0))
             {
-                IsFire = true;
-                Fire();
+                if (IsFire == false)
+                {
+                    IsFire = true;
+                    Fire();
+                }
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Arrow"&&_elapsedTime >= 0.5f)
+        if(collision.tag == "Arrow")
         {
             IsFire = false;
-            _elapsedTime = 0;
         }
     }
     void Fire()
     {
-        Instantiate(Arrow, transform.position, transform.rotation);
+        Instantiate(Arrow, _firePosition.position, _firePosition.rotation);
     }
 }
