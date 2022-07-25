@@ -30,13 +30,13 @@ public class Arrow : MonoBehaviour
         Vector2 vec = new Vector2(90f, 0f);
         transform.Rotate(vec);
 
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetMouseButton(1))
         {
             IsReturn = true;
             IsCollision = false;
         }
 
-        if (Input.GetKeyUp(KeyCode.R))
+        if (Input.GetMouseButtonUp(1))
         {
             IsReturn = false;
         }
@@ -44,7 +44,7 @@ public class Arrow : MonoBehaviour
         if (IsReturn == false && IsCollision == false)
         {
             _navMeshAgent.ResetPath();
-            transform.Translate(Vector2.up * MoveSpeed);
+            transform.Translate(Vector2.right * MoveSpeed);
         }
         else if(IsReturn == false && IsCollision == true)
         {
@@ -64,10 +64,19 @@ public class Arrow : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (collision.tag == "Wall")
+        if (collision.tag == "Wall" || collision.tag == "WeakPoint")
         {
             _collisionPosition.position = transform.position;
             IsCollision = true;
+        }
+
+        if(collision.tag == "Boss")
+        {
+            if (IsReturn == false)
+            {
+                _collisionPosition.position = transform.position;
+                IsCollision = true;
+            }
         }
     }
 }

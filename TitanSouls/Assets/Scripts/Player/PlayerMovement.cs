@@ -7,7 +7,9 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D _rigid;
     PlayerInput _input;
 
-    public float MoveSpeed = 1.5f;
+    public Transform ShootPosition;
+
+    public float MoveSpeed = 8f;
     void Start()
     {
         _rigid = GetComponent<Rigidbody2D>();
@@ -20,8 +22,12 @@ public class PlayerMovement : MonoBehaviour
 
         float xSpeed = _input.X * MoveSpeed;
         float ySpeed = _input.Y * MoveSpeed;
-        
-        Vector2 MoveVec = new Vector2(xSpeed, ySpeed);
-        _rigid.AddForce(MoveVec);
+
+        //Vector2 MoveVec = new Vector2(xSpeed, ySpeed);
+        //_rigid.AddForce(MoveVec);
+
+        Vector2 MoveVec = new Vector2(xSpeed * Time.deltaTime, ySpeed * Time.deltaTime);
+
+        transform.Translate(MoveVec);
     }
 }

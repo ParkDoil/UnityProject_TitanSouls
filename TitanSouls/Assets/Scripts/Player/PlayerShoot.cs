@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class PlayerShoot : MonoBehaviour
 {
     public GameObject Arrow;
-    public Transform _firePosition;
 
 
     public bool IsFire { get; private set; }
@@ -39,6 +38,6 @@ public class PlayerShoot : MonoBehaviour
     }
     void Fire()
     {
-        Instantiate(Arrow, _firePosition.position, _firePosition.rotation);
+        Instantiate(Arrow, transform.position, transform.rotation);
     }
 }
