@@ -6,18 +6,12 @@ using UnityEngine.SceneManagement;
 public class PlayerShoot : MonoBehaviour
 {
     public GameObject Arrow;
-    private int _arrowCount;
+    public Transform FireLocation;
 
     public bool IsFire { get; private set; }
 
     void Update()
     {
-        if(_arrowCount >= 2)
-        {
-            IsFire = false;
-        }
-
-        _arrowCount = 1;
         if (Input.GetKeyDown(KeyCode.C))
         {
             if (IsFire == false)
@@ -32,13 +26,12 @@ public class PlayerShoot : MonoBehaviour
     {
         if (collision.tag == "Arrow")
         {
-            ++_arrowCount;
+            IsFire = false;
         }
     }
 
     void Fire()
     {
-        --_arrowCount;
-        Instantiate(Arrow, transform.position, transform.rotation);
+        Instantiate(Arrow, FireLocation.position, FireLocation.rotation);
     }
 }
