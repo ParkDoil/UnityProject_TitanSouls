@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class WeakPoint : MonoBehaviour
 {
+    Boss1Behavior _script;
+
     public bool IsHit { get; private set; }
-    void OnEnable()
+    void Start()
     {
         IsHit = false;
+        _script = GetComponentInParent<Boss1Behavior>();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Arrow")
+        if (collision.gameObject.tag == "Arrow" && _script.IsShootArc == false)
         {
             IsHit = true;
         }

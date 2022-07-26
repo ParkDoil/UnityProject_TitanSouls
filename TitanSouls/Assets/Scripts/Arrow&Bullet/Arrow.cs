@@ -25,8 +25,6 @@ public class Arrow : MonoBehaviour
 
     void Update()
     {
-        IsReturn = false;
-
         Vector2 vec = new Vector2(90f, 0f);
         transform.Rotate(vec);
 
