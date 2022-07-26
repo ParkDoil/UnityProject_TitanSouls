@@ -11,7 +11,7 @@ public class Arrow : MonoBehaviour
     private Transform _target;
     private Transform _collisionPosition;
 
-    public float MoveSpeed;
+    public float MoveSpeed = 0.5f;
     public bool IsReturn { get; private set; }
     public bool IsCollision { get; private set; }
 
