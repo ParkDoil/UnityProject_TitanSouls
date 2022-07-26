@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - WeakPoint
   - Boss
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
