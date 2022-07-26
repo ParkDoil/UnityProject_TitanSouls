@@ -19,6 +19,7 @@ public class Bullet : MonoBehaviour
     {
         if(collision.gameObject.tag == "Wall")
         {
+            transform.rotation = Quaternion.identity;
             gameObject.SetActive(false);
         }
     }

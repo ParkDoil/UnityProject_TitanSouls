@@ -68,7 +68,7 @@ public class Boss1Behavior : MonoBehaviour
         {
             _rigid.AddForce(-MoveVec);
 
-            if (transform.position.x <= -16f)
+            if (transform.position.x <= -17f)
             {
                 IsLeft = false;
             }
@@ -77,7 +77,7 @@ public class Boss1Behavior : MonoBehaviour
         {
             _rigid.AddForce(MoveVec);
 
-            if (transform.position.x >= 7f)
+            if (transform.position.x >= 8f)
             {
                 IsLeft = true;
             }
@@ -215,8 +215,8 @@ public class Boss1Behavior : MonoBehaviour
         {
             return;
         }
-        int roundNumA = 40;
-        int roundNumB = 30;
+        int roundNumA = 30;
+        int roundNumB = 20;
         int roundNum = _patternCount % 2 == 0 ? roundNumA : roundNumB;
 
         for(int i=0;i<roundNum;++i)
