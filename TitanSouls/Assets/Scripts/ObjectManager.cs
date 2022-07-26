@@ -13,8 +13,8 @@ public class ObjectManager : MonoBehaviour
     GameObject[] _targetPool;
     void Awake()
     {
-        _bossBulletA = new GameObject[1000];
-        _bossBulletB = new GameObject[50];
+        _bossBulletA = new GameObject[300];
+        _bossBulletB = new GameObject[30];
 
         Pooling();
     }
@@ -56,10 +56,5 @@ public class ObjectManager : MonoBehaviour
 
         }
         return null;
-    }
-
-    void Update()
-    {
-        
     }
 }

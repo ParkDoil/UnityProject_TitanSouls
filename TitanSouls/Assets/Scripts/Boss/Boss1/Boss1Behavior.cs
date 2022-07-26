@@ -54,6 +54,7 @@ public class Boss1Behavior : MonoBehaviour
         if (IsDead == false && IsShootArc == false)
         {
             Move();
+
             if (IsStart == false)
             {
                 IsStart = true;
@@ -87,6 +88,7 @@ public class Boss1Behavior : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+        GameManager.Instance.StageClear();
     }
 
     void Think()

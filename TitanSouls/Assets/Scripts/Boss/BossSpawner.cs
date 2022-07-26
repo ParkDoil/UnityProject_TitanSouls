@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class BossSpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject BossAPrefab;
+    // GameObject BossBPrefab;
+
+    public Transform BossASpawnPosition;
+    // Transform BossBSpawnPosition;
+
     void Start()
     {
-        
+        Invoke("SpawnBoss", 1f);
     }
 
-    // Update is called once per frame
-    void Update()
+    void SpawnBoss()
     {
-        
+        int _spawnBossIndex = Random.Range(1, 3);
+
+        switch(_spawnBossIndex)
+        {
+            case 1:
+                Instantiate(BossAPrefab, BossASpawnPosition);
+                break;
+            case 2:
+                Instantiate(BossAPrefab, BossASpawnPosition);
+                break;
+        }
     }
 }

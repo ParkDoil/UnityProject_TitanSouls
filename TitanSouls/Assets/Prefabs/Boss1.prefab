@@ -218,7 +218,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!114 &2522191873750832367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,7 +234,8 @@ MonoBehaviour:
   Speed: 250
   WeakPoint: {fileID: 2522191873257108462}
   HitEffect: {fileID: 886459574909142862, guid: 13c89c07a2393774ca83d1fc05d1e855, type: 3}
-  _maxPattern: 0500000004000000640000000a000000
+  IsShootArc: 0
+  _maxPattern: 04000000060000006300000008000000
 --- !u!61 &2522191873750832355
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -248,7 +249,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.84, y: 1}
+  m_Offset: {x: -0.67, y: 1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -259,7 +260,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.66}
+  m_Size: {x: 0.7, y: 0.66}
   m_EdgeRadius: 0
 --- !u!61 &2522191873750832364
 BoxCollider2D:
@@ -274,7 +275,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.84, y: 1}
+  m_Offset: {x: 0.68, y: 1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -285,5 +286,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.66}
+  m_Size: {x: 0.69, y: 0.66}
   m_EdgeRadius: 0
