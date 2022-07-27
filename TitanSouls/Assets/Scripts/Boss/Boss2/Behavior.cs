@@ -5,6 +5,7 @@ using UnityEngine;
 public class Behavior : MonoBehaviour
 {
     public bool IsLeft { get; private set; }
+    public bool IsDead { get; private set; }
     
     public GameObject WeakPoint;
     public GameObject Player;
@@ -18,7 +19,18 @@ public class Behavior : MonoBehaviour
 
     void Update()
     {
-        PositionCheck();
+        if (WeakPoint.GetComponent<Boss2WeakPoint>().IsHit == true)
+        {
+            IsDead = true;
+
+            Invoke("Die", 2f);
+        }
+
+        if (IsDead == false)
+        {
+            PositionCheck();
+
+        }
     }
 
     void PositionCheck()
@@ -34,5 +46,11 @@ public class Behavior : MonoBehaviour
         {
             IsLeft = false;
         }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
+        GameManager.Instance.StageClear();
     }
 }

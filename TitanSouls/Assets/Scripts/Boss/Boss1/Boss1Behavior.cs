@@ -38,7 +38,7 @@ public class Boss1Behavior : MonoBehaviour
     {
         _rigid.velocity = Vector2.zero;
 
-        if (WeakPoint.GetComponent<WeakPoint>().IsHit == true)
+        if (WeakPoint.GetComponent<Boss1WeakPoint>().IsHit == true)
         {
             IsDead = true;
 

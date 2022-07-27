@@ -19,13 +19,21 @@ public class LeftHand : Boss2HandBase
     {
         transform.rotation = Quaternion.identity;
 
-        if (_script.IsLeft == true)
+        if (_script.IsDead == true)
         {
-            Attack();
+            _navMeshAgent.ResetPath();
         }
         else
         {
-            Defense();
+
+            if (_script.IsLeft == true)
+            {
+                Attack();
+            }
+            else
+            {
+                Defense();
+            }
         }
     }
     public override void Attack()
