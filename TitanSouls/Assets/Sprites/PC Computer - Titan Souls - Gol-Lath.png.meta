@@ -1,0 +1,1048 @@
+fileFormatVersion: 2
+guid: efda760b7a9926148b02e21fc53c387b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 446
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b8d5cae887114429bf22a62c546e0d
+      internalID: 1029959897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 446
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0178b77f034f7cf4a9679882945c24c4
+      internalID: -41056517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 446
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c20b8a417ad33040947c7c2befa28ac
+      internalID: -1107177222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 446
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7168c9588fc1e4d449490c946920ef12
+      internalID: -1117868591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 446
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4af843cc84e47c40864b89b4da05ed4
+      internalID: 657246852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_5
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 407
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9fe7544d12e064285b3e3e69dc94bb
+      internalID: -1659942807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 288
+        width: 86
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2d0e76b293e504a829f9d88d310107
+      internalID: 755866522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_7
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 371
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93503e6be626c8b4c987a557efcc2141
+      internalID: -366303479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_8
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 372
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726301024bb1c994e90698f9aa3b67fc
+      internalID: -54043949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_9
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 325
+        width: 76
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c74ba3aaaa5b554f9868fc49e101d22
+      internalID: 2040788520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_10
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 350
+        width: 52
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efed24f50d21ae94e9e115e17b398435
+      internalID: 856524823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_11
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 261
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f40d072195869a4088c320be998185d
+      internalID: -1419827766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_12
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 247
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3490136c5c1dd9346a4d9fb7c7475988
+      internalID: -1852943344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_13
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 235
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a71bbe037663c64d9fe6dd1d200a72a
+      internalID: -559280974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 249
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe7628eed32901409750eaa156ad121
+      internalID: -1605187556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_15
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 247
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e11ea5250ddccc4b97e0d8a99f2b7c7
+      internalID: 1863371290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_16
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 244
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e846a678326f92341aab73a908f1f815
+      internalID: 729027056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_17
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 241
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ec27d50bd4fc34b9388c3c1d0d442c
+      internalID: 49283361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_18
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 246
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f5312890a8fee4ab093d4e9df436f1
+      internalID: -1559254413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_19
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 215
+        width: 43
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a77316b3232c994fa5b182cd7906c7d
+      internalID: -453345283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 233
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb5e6164c1a68c4c833613c5cf06240
+      internalID: 1754226316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_21
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 245
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714d1f7c166515a429a807c7aa39336a
+      internalID: 837475642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_22
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 231
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548d47c34ac80e74ba8433b3dda0f40d
+      internalID: 1744789023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_23
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 233
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37adcf49a02501d4eb79cebcabda5d56
+      internalID: -559735839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_24
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 235
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c54aba1386e1f845b7136638f94b6fa
+      internalID: 1568724635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_25
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 237
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadbd9a69151adf47a9001504c35fffc
+      internalID: 1390920522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_26
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 202
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ce620871573034596906a5d168e65b
+      internalID: -648588217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_27
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 206
+        width: 48
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2511073c62d346440bf7bd667a936024
+      internalID: 1293811099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_28
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 205
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c5b2a2693f2f94da72309e6865be06
+      internalID: 614576585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_29
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 233
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a24d957652ad494c8ac9659d50c7af2
+      internalID: -939451453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_30
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 229
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 583abb405340cae4d882be9f5609b562
+      internalID: -1271633232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_31
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 228
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1239fd8dc9003584f904ff79e58ad9cf
+      internalID: -388503004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_32
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 229
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec620a77b31455b46ad5e3382eff8f5e
+      internalID: 1219619041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_33
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 228
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b6ef60081080b409cccab165f41410
+      internalID: 2109725518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_34
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 207
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901c3986fa63b314381c6986020f3e4a
+      internalID: -242100099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_35
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 206
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671b4552610219c4ab93af43f44c6bf3
+      internalID: 804401029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_36
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 205
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c6c64fbeed3ba43a0552dda689df41
+      internalID: 1324132164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_37
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 165
+        width: 39
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f566ce1b8e97c4781c599a5ce4fc6f
+      internalID: 915568385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_38
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 166
+        width: 39
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8735f97c4af084fb62707d0c842e9b
+      internalID: -673467055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_39
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 169
+        width: 46
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef4495c47f9b674ab82b98bf2210bf7
+      internalID: -47204416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - Titan Souls - Gol-Lath_40
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 166
+        width: 39
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c090e258640c34542845eec68b828219
+      internalID: -976360216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - Titan Souls - Gol-Lath_22: 1744789023
+      PC Computer - Titan Souls - Gol-Lath_33: 2109725518
+      PC Computer - Titan Souls - Gol-Lath_21: 837475642
+      PC Computer - Titan Souls - Gol-Lath_36: 1324132164
+      PC Computer - Titan Souls - Gol-Lath_35: 804401029
+      PC Computer - Titan Souls - Gol-Lath_26: -648588217
+      PC Computer - Titan Souls - Gol-Lath_15: 1863371290
+      PC Computer - Titan Souls - Gol-Lath_8: -54043949
+      PC Computer - Titan Souls - Gol-Lath_38: -673467055
+      PC Computer - Titan Souls - Gol-Lath_1: -41056517
+      PC Computer - Titan Souls - Gol-Lath_0: 1029959897
+      PC Computer - Titan Souls - Gol-Lath_31: -388503004
+      PC Computer - Titan Souls - Gol-Lath_30: -1271633232
+      PC Computer - Titan Souls - Gol-Lath_32: 1219619041
+      PC Computer - Titan Souls - Gol-Lath_2: -1107177222
+      PC Computer - Titan Souls - Gol-Lath_10: 856524823
+      PC Computer - Titan Souls - Gol-Lath_18: -1559254413
+      PC Computer - Titan Souls - Gol-Lath_12: -1852943344
+      PC Computer - Titan Souls - Gol-Lath_40: -976360216
+      PC Computer - Titan Souls - Gol-Lath_6: 755866522
+      PC Computer - Titan Souls - Gol-Lath_16: 729027056
+      PC Computer - Titan Souls - Gol-Lath_24: 1568724635
+      PC Computer - Titan Souls - Gol-Lath_39: -47204416
+      PC Computer - Titan Souls - Gol-Lath_14: -1605187556
+      PC Computer - Titan Souls - Gol-Lath_28: 614576585
+      PC Computer - Titan Souls - Gol-Lath_23: -559735839
+      PC Computer - Titan Souls - Gol-Lath_4: 657246852
+      PC Computer - Titan Souls - Gol-Lath_5: -1659942807
+      PC Computer - Titan Souls - Gol-Lath_37: 915568385
+      PC Computer - Titan Souls - Gol-Lath_11: -1419827766
+      PC Computer - Titan Souls - Gol-Lath_34: -242100099
+      PC Computer - Titan Souls - Gol-Lath_27: 1293811099
+      PC Computer - Titan Souls - Gol-Lath_29: -939451453
+      PC Computer - Titan Souls - Gol-Lath_7: -366303479
+      PC Computer - Titan Souls - Gol-Lath_17: 49283361
+      PC Computer - Titan Souls - Gol-Lath_9: 2040788520
+      PC Computer - Titan Souls - Gol-Lath_25: 1390920522
+      PC Computer - Titan Souls - Gol-Lath_19: -453345283
+      PC Computer - Titan Souls - Gol-Lath_3: -1117868591
+      PC Computer - Titan Souls - Gol-Lath_13: -559280974
+      PC Computer - Titan Souls - Gol-Lath_20: 1754226316
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
