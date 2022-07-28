@@ -5,19 +5,39 @@ using UnityEngine;
 public class BossSpawner : MonoBehaviour
 {
     public GameObject BossAPrefab;
-    // GameObject BossBPrefab;
+    public GameObject BossBPrefab;
 
     public Transform BossASpawnPosition;
-    // Transform BossBSpawnPosition;
+    public Transform BossBSpawnPosition;
+
+    private int _spawnBossIndex;
+    private int _prevBossIndex;
 
     void Start()
     {
         Invoke("SpawnBoss", 1f);
+        _spawnBossIndex = 0;
+
     }
 
     void SpawnBoss()
     {
-        int _spawnBossIndex = Random.Range(1, 3);
+        if (_spawnBossIndex == 0)
+        {
+            _spawnBossIndex = Random.Range(1, 3);
+            _prevBossIndex = _spawnBossIndex;
+        }
+        else
+        {
+            if (_prevBossIndex == 1)
+            {
+                _spawnBossIndex = 2;
+            }
+            if (_prevBossIndex == 2)
+            {
+                _spawnBossIndex = 1;
+            }
+        }
 
         switch(_spawnBossIndex)
         {
@@ -25,7 +45,7 @@ public class BossSpawner : MonoBehaviour
                 Instantiate(BossAPrefab, BossASpawnPosition);
                 break;
             case 2:
-                Instantiate(BossAPrefab, BossASpawnPosition);
+                Instantiate(BossBPrefab, BossBSpawnPosition);
                 break;
         }
     }

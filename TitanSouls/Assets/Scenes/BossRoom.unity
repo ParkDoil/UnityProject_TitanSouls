@@ -751,7 +751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1449877930
 Transform:
   m_ObjectHideFlags: 0
@@ -782,7 +782,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BossAPrefab: {fileID: 2522191873750832363, guid: 41b53a8f369c02a4fab0d617862e5fe9, type: 3}
+  BossBPrefab: {fileID: 1339243305079784826, guid: 37edce43dd3128b41bbc1190dfd4fcec, type: 3}
   BossASpawnPosition: {fileID: 1116068664}
+  BossBSpawnPosition: {fileID: 1920777489}
 --- !u!1 &1615437325
 GameObject:
   m_ObjectHideFlags: 0
