@@ -60,8 +60,8 @@ public class RightHand : Boss2HandBase
         Vector3 dirvec = _attackPosition - transform.position;
 
         _spriteRaderer.sprite = GoingSprite;
-        _navMeshAgent.speed = 15f;
-        _navMeshAgent.acceleration = 30f;
+        _navMeshAgent.speed = 30f;
+        _navMeshAgent.acceleration = 60f;
 
         _navMeshAgent.SetDestination(_attackPosition);
 
@@ -87,8 +87,8 @@ public class RightHand : Boss2HandBase
 
         base.Defense();
         _spriteRaderer.sprite = DefenseSprite;
-        _navMeshAgent.speed = 5f;
-        _navMeshAgent.acceleration = 10f;
+        _navMeshAgent.speed = 15f;
+        _navMeshAgent.acceleration = 30f;
         _navMeshAgent.SetDestination(_script.WeakPoint.transform.position);
     }
 

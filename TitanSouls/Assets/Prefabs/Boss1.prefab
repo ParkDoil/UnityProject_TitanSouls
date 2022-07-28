@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2522191873257108451}
   - component: {fileID: 2522191873257108460}
   - component: {fileID: 2522191873257108461}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WeakPoint
   m_TagString: WeakPoint
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 2522191873750832367}
   - component: {fileID: 2522191873750832355}
   - component: {fileID: 2522191873750832364}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Boss1
   m_TagString: Boss
   m_Icon: {fileID: 0}

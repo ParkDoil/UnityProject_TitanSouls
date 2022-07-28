@@ -11,33 +11,16 @@ public class BossSpawner : MonoBehaviour
     public Transform BossBSpawnPosition;
 
     private int _spawnBossIndex;
-    private int _prevBossIndex;
 
     void Start()
     {
         Invoke("SpawnBoss", 1f);
-        _spawnBossIndex = 0;
 
     }
 
     void SpawnBoss()
     {
-        if (_spawnBossIndex == 0)
-        {
-            _spawnBossIndex = Random.Range(1, 3);
-            _prevBossIndex = _spawnBossIndex;
-        }
-        else
-        {
-            if (_prevBossIndex == 1)
-            {
-                _spawnBossIndex = 2;
-            }
-            if (_prevBossIndex == 2)
-            {
-                _spawnBossIndex = 1;
-            }
-        }
+        _spawnBossIndex = Random.Range(1, 3);
 
         switch(_spawnBossIndex)
         {
