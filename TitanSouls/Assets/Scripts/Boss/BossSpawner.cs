@@ -26,9 +26,11 @@ public class BossSpawner : MonoBehaviour
         {
             case 1:
                 Instantiate(BossAPrefab, BossASpawnPosition);
+                GameManager.Instance.BossAText();
                 break;
             case 2:
                 Instantiate(BossBPrefab, BossBSpawnPosition);
+                GameManager.Instance.BossBText();
                 break;
         }
     }
