@@ -41,7 +41,7 @@ public class BossText : MonoBehaviour
     {
         _childs[1].SetActive(true);
 
-        Invoke("DeactivateA", 1f);
+        Invoke("DeactivateB", 1f);
     }
     public void DeactivateB()
     {
