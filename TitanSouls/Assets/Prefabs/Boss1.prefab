@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4584d937ab3ae37428655eff1960e89f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 250
+  Speed: 500
   WeakPoint: {fileID: 2522191873257108462}
   HitEffect: {fileID: 886459574909142862, guid: 13c89c07a2393774ca83d1fc05d1e855, type: 3}
   IsShootArc: 0
