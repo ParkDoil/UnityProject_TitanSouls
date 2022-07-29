@@ -16,8 +16,9 @@ public class RightHand : Boss2HandBase
 
     Vector3 _attackPosition;
 
-    bool _hasPosition;
-    float _elapsedTime;
+    private bool _hasPosition;
+    private float _elapsedTime;
+    private float _attackTime;
 
     void Start()
     {
@@ -72,7 +73,7 @@ public class RightHand : Boss2HandBase
             _spriteRaderer.sprite = AttackSprite;
         }
 
-        if (_elapsedTime >= 2f)
+        if (_elapsedTime >= _attackTime)
         {
             _elapsedTime = 0f;
             _hasPosition = false;
@@ -95,6 +96,7 @@ public class RightHand : Boss2HandBase
     void AttackPositionCheck()
     {
         _hasPosition = true;
+        _attackTime = Random.Range(0.5f, 3f);
         _attackPosition = _script.Player.transform.position;
     }
 }
