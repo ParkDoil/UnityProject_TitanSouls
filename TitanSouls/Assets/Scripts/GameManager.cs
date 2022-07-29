@@ -16,7 +16,7 @@ public class GameManager : SingletonBehaviour<GameManager>
         {
             _isEnd = false;
             Time.timeScale = 1f;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
     public void StageClearText()
@@ -25,7 +25,7 @@ public class GameManager : SingletonBehaviour<GameManager>
     }
     public void StageClear()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void BossAText()
@@ -41,6 +41,15 @@ public class GameManager : SingletonBehaviour<GameManager>
     {
         _isEnd = true;
         OnGameOver.Invoke();
+    }
+    
+    public void StartButton()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void ExitButton()
+    {
+        Application.Quit();
     }
 
 }
