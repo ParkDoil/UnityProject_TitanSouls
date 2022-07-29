@@ -12,9 +12,21 @@ public class Behavior : MonoBehaviour
 
     private float _dot;
 
+    private int _childCount;
+
+    SpriteRenderer[] _spriteRenderer;
+
     void Start()
     {
+        _childCount = transform.childCount;
         Player = GameObject.FindGameObjectWithTag("Player");
+
+        _spriteRenderer = new SpriteRenderer[_childCount];
+
+        for (int i = 0; i < _childCount; ++i)
+        {
+            _spriteRenderer[i] = transform.GetChild(i).GetComponent<SpriteRenderer>();
+        }
     }
 
     void Update()
@@ -24,7 +36,7 @@ public class Behavior : MonoBehaviour
             IsDead = true;
 
             GameManager.Instance.StageClearText();
-            Invoke("Die", 3f);
+            StartCoroutine(DieAnimation());
         }
 
         if (IsDead == false)
@@ -32,6 +44,25 @@ public class Behavior : MonoBehaviour
             PositionCheck();
 
         }
+    }
+
+    IEnumerator DieAnimation()
+    {
+        float _fadeCount = 1f;
+
+        while (_fadeCount > 0f)
+        {
+            _fadeCount -= 0.1f;
+
+            yield return new WaitForSeconds(0.5f);
+
+            for (int i = 0; i < _childCount; ++i)
+            {
+                _spriteRenderer[i].color = new Color(255f, 255f, 255f, _fadeCount);
+            }
+        }
+
+        Die();
     }
 
     void PositionCheck()

@@ -21,9 +21,10 @@ public class Boss1Behavior : MonoBehaviour
 
     private int _patternIndex;
     private int _patternCount;
-    
+
     public int[] _maxPattern;
     Vector2 _firstPosition;
+    SpriteRenderer _spriteRenderer;
 
 
     void Awake()
@@ -33,6 +34,7 @@ public class Boss1Behavior : MonoBehaviour
         _player = GameObject.FindGameObjectWithTag("Player");
         _objectManager = GameObject.Find("ObjectManager").GetComponent<ObjectManager>();
         _firstPosition = transform.position;
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -43,9 +45,9 @@ public class Boss1Behavior : MonoBehaviour
         {
             IsDead = true;
 
-            _animator.SetTrigger(BossAnimID.DIE);
             GameManager.Instance.StageClearText();
-            Invoke("Die", 3f);
+
+            StartCoroutine(DieAnimation());
         }
 
         if (IsDead == false && IsShootArc == false)
@@ -59,6 +61,20 @@ public class Boss1Behavior : MonoBehaviour
             }
         }
     }
+    IEnumerator DieAnimation()
+    {
+        float _fadeCount = 1f;
+
+        while (_fadeCount > 0f)
+        {
+            _fadeCount -= 0.1f;
+            yield return new WaitForSeconds(0.5f);
+            _spriteRenderer.color = new Color(255f, 255f, 255f, _fadeCount);
+        }
+
+        Die();
+    }
+
     void Die()
     {
         Destroy(gameObject);
