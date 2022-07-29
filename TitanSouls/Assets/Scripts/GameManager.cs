@@ -7,6 +7,7 @@ public class GameManager : SingletonBehaviour<GameManager>
     public UnityEvent OnBossA = new UnityEvent();
     public UnityEvent OnBossB = new UnityEvent();
     public UnityEvent OnGameOver = new UnityEvent();
+    public UnityEvent OnStageClear = new UnityEvent();
 
     private bool _isEnd = false;
     void Update()
@@ -14,10 +15,14 @@ public class GameManager : SingletonBehaviour<GameManager>
         if (_isEnd && Input.GetKeyDown(KeyCode.R))
         {
             _isEnd = false;
+            Time.timeScale = 1f;
             SceneManager.LoadScene(0);
         }
     }
-
+    public void StageClearText()
+    {
+        OnStageClear.Invoke();
+    }
     public void StageClear()
     {
         SceneManager.LoadScene(0);

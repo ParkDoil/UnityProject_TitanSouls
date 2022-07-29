@@ -23,7 +23,8 @@ public class Behavior : MonoBehaviour
         {
             IsDead = true;
 
-            Invoke("Die", 2f);
+            GameManager.Instance.StageClearText();
+            Invoke("Die", 3f);
         }
 
         if (IsDead == false)

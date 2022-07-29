@@ -25,6 +25,7 @@ public class Boss1Behavior : MonoBehaviour
     public int[] _maxPattern;
     Vector2 _firstPosition;
 
+
     void Awake()
     {
         _rigid = GetComponent<Rigidbody2D>();
@@ -43,12 +44,8 @@ public class Boss1Behavior : MonoBehaviour
             IsDead = true;
 
             _animator.SetTrigger(BossAnimID.DIE);
-
-            //HitEffect.transform.position = WeakPoint.transform.position;
-            //HitEffect.transform.rotation = WeakPoint.transform.rotation;
-            //HitEffect.Play();
-
-            Invoke("Die", 1.5f);
+            GameManager.Instance.StageClearText();
+            Invoke("Die", 3f);
         }
 
         if (IsDead == false && IsShootArc == false)
@@ -62,6 +59,12 @@ public class Boss1Behavior : MonoBehaviour
             }
         }
     }
+    void Die()
+    {
+        Destroy(gameObject);
+        GameManager.Instance.StageClear();
+    }
+
     void Move()
     {
         Vector2 MoveVec = Vector2.right * Speed;
@@ -85,11 +88,6 @@ public class Boss1Behavior : MonoBehaviour
         }
     }
 
-    void Die()
-    {
-        Destroy(gameObject);
-        GameManager.Instance.StageClear();
-    }
 
     void Think()
     {
